@@ -1,0 +1,15 @@
+/* Style to cover the entire viewport */
+.videoholder {
+    display: flex;
+    justify-content: center;
+  }
+  
+  video {
+    
+    width: 99vw;
+    padding: 0;
+    margin: 0;
+    height: auto;
+     /* Cover the entire viewport */
+  }
+  

@@ -1,0 +1,13 @@
+.card-img-top{
+    height: 50vh;
+    
+}
+.card{
+    background-color: rgb(249, 221, 255);
+}
+.btn{
+    background-color: rgb(190, 5, 232);
+}
+.btn:hover{
+    background-color: rgb(97, 17, 113);
+}

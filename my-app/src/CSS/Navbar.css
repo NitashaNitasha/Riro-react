@@ -1,0 +1,20 @@
+.navbar{
+    
+    height: 8vh;
+    
+}
+li a{
+    color:rgb(68, 27, 106);
+}
+.navbar div{
+    background-color: rgb(255, 232, 255);
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.navitem{
+    
+    margin-left:20px ;
+    margin-right:20px ;
+
+}

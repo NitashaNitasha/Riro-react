@@ -1,5 +1,7 @@
 import React from 'react'
-import img1 from './Images/TWICE-I-GOT-YOU-full.jpeg';
+import img1 from './Images/promo1.jpeg';
+import img2 from './Images/cover3.jpg';
+import img3 from './Images/promo2.jpeg';
 import './CSS/Home.css'
 export default function home() {
   
@@ -12,24 +14,24 @@ export default function home() {
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src={img1} class="d-block w-100 carousel_img" alt="..." />
+        <img src={img3} class="d-block w-100 carousel_img" alt="..." />
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+          <h5>Folklore</h5>
+          <p>Feeling grand and green.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src={img2} class="d-block w-100 carousel_img" alt="..."/>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Vigilante</h5>
+          <p>My attitude defines me.</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src={img1} class="d-block w-100 carousel_img" alt="..."/>
         <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src={img1} class="d-block w-100 carousel_img" alt="..."/>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+          <h5>Angels</h5>
+          <p>dressing well = good manners.</p>
         </div>
       </div>
     </div>

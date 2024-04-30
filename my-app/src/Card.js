@@ -1,16 +1,27 @@
+import React, { useState } from 'react';
+import './CSS/Card.css';
+import data from './data';
 
-import React from 'react';
+export default function Card({ id, imagePath }) {
+  const item = data.find((item) => item.id === id);
 
-import './CSS/Card.css'
-export default function Card(props) {
+  const [addButtonText, setAddButtonText] = useState("Add to cart");
+
+  const addToCart = () => {
+    setAddButtonText("Added");
+    // Here you can also perform other operations related to adding the item to the cart
+  };
+
   return (
     <div>
-      <div className="card" style={{ width: '18rem' }} >
-        <img src={props.img_path} className="card-img-top" alt="..." />
+      <div className="card" style={{ width: '18rem' }}>
+        <img src={imagePath} className="card-img-top" alt="..." />
         <div className="card-body">
-          <h5 className="card-title">{props.name}</h5>
-          <p className="card-text">{props.price}</p>
-          <a href="#" className="btn btn-primary">Add to cart</a>
+          <h5 className="card-title">{item.name}</h5>
+          <p className="card-text">{item.price}</p>
+          <button className="btn btn-primary" onClick={addToCart}>
+            {addButtonText}
+          </button>
         </div>
       </div>
     </div>
